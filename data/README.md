@@ -3,7 +3,9 @@ This project uses the **MOT17 (Multiple Object Tracking 2017)** dataset, a stand
 Due to size constraints, the dataset is not included in this repository.
 
 Download MOT17 from:
+
 https://motchallenge.net/data/MOT17/
+
 After downloading, extract the dataset into the `data/` directory.
 
 ---
