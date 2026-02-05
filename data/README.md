@@ -17,12 +17,13 @@ After downloading, extract the dataset into the `data/` directory.
 The project expects the following structure:
 
 data/
-└── MOT17/
-    ├── train/
-    │   ├── MOT17-02-FRCNN/
-    │   ├── MOT17-04-FRCNN/
-    │   └── ...
-    └── test/
-        ├── MOT17-01-FRCNN/
-        ├── MOT17-03-FRCNN/
-        └── ...
+  MOT17/
+    train/
+      MOT17-02-FRCNN/
+      MOT17-04-FRCNN/
+      ...
+    test/
+      MOT17-01-FRCNN/
+      MOT17-03-FRCNN/
+      ...
+
