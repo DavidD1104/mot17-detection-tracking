@@ -4,7 +4,9 @@ Due to size constraints, the dataset is not included in this repository.
 
 Download MOT17 from:
 
+
 https://motchallenge.net/data/MOT17/
+
 
 After downloading, extract the dataset into the `data/` directory.
 
