@@ -15,10 +15,25 @@ def main():
 
     prev_time = time.time()
 
+
+    first_img_path = os.path.join(IMG_DIR, image_files[0])
+    frame = cv2.imread(first_img_path)
+    height, width, _ = frame.shape
+
+    output_path = "outputs/yolov8s_MOT17-02-FRCNN.mp4"
+    fourcc = cv2.VideoWriter_fourcc(*"mp4v")
+    fps_video = 30 
+    out = cv2.VideoWriter(output_path, fourcc, fps_video, (width, height))
+
+
+    cv2.namedWindow("MOT17 - Detection + Tracking", cv2.WINDOW_NORMAL)
+    cv2.resizeWindow("MOT17 - Detection + Tracking", 1280, 720)
+
     for img_name in image_files:
         img_path = os.path.join(IMG_DIR, img_name)
         frame = cv2.imread(img_path)
 
+        
         if frame is None:
             continue
 
@@ -45,13 +60,15 @@ def main():
                     (0, 0, 255),
                     2)
 
-
+        out.write(frame)
         cv2.imshow("MOT17 - Detection + Tracking", frame)
 
         if cv2.waitKey(1) & 0xFF == 27:
             break
 
     cv2.destroyAllWindows()
+    out.release()
 
 if __name__ == "__main__":
     main()
+
