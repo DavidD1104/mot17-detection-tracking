@@ -48,7 +48,7 @@ MOT17 dataset (not included in this repository)
 
 I compared the behaviour of YOLOv8n and YOLOv8s as person detectors in a SORT-based multi-object tracking pipeline using the MOT17 dataset.
 
-Although it is generally expected that a stronger detector improves identity stability, our results show that YOLOv8s produced a higher number of unique IDs compared to YOLOv8n.
+Although it is generally expected that a stronger detector improves identity stability, results show that YOLOv8s produced a higher number of unique IDs compared to YOLOv8n.
 
 This behavior can be explained by the increased detection capacity of YOLOv8s. The model is able to detect more pedestrians, including smaller and partially occluded individuals, which leads to the creation of additional tracks. While this increases the total number of unique IDs, it does not necessarily indicate worse tracking performance, but rather a more complete detection of the scene.
 
