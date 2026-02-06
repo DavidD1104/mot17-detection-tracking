@@ -20,11 +20,16 @@ This project implements a real-time multi-object tracking pipeline combining a C
 
 Below are qualitative visual results of running YOLOv8n and YOLOv8s on the MOT17-02-FRCNN sequence.
 
-### YOLOv8n + SORT
-![YOLOv8n results on MOT17-10-FRCNN](assets/yolov8n_MOT17-10-FRCNN.png)
 
-### YOLOv8s + SORT
-![YOLOv8s results on MOT17-10-FRCNN](assets/yolov8s_MOT17-10-FRCNN.png)
+<p align="center">
+  <img src="assets/yolov8n_MOT17-10-FRCNN.png" width="45%" />
+  <img src="assets/yolov8s_MOT17-10-FRCNN.png" width="45%" />
+</p>
+
+<p align="center">
+  <b>Left:</b> YOLOv8n + SORT &nbsp;&nbsp; | &nbsp;&nbsp;
+  <b>Right:</b> YOLOv8s + SORT
+</p>
 
 ## Results
 - Real-time performance: ~XX FPS (YOLOv8n)
