@@ -44,4 +44,6 @@ Additionally, the higher detection sensitivity of YOLOv8s can introduce short-li
 | YOLOv8n | 10.28    | 182         |
 | YOLOv8s | 7.59    | 209         |
 
+This values were obtained by evaluating the models with the MOT17-02-FRCNN video
+
 The experiment demonstrates the trade-off between speed, detection coverage, and identity stability in real-time multi-object tracking systems.
