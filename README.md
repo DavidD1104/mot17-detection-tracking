@@ -18,7 +18,7 @@ This project implements a real-time multi-object tracking pipeline combining a C
 
 ## Expected output
 
-Below are qualitative visual results of running YOLOv8n and YOLOv8s on the MOT17-02-FRCNN sequence.
+Below are qualitative visual results of running YOLOv8n and YOLOv8s on the MOT17-10-FRCNN sequence.
 
 
 <p align="center">
