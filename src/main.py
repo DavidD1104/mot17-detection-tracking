@@ -25,6 +25,9 @@ def main():
     fps_video = 30 
     out = cv2.VideoWriter(output_path, fourcc, fps_video, (width, height))
 
+    fps_list = []
+    unique_ids = set()
+
 
     cv2.namedWindow("MOT17 - Detection + Tracking", cv2.WINDOW_NORMAL)
     cv2.resizeWindow("MOT17 - Detection + Tracking", 1280, 720)
@@ -42,6 +45,9 @@ def main():
 
         for track in tracks:
             x1, y1, x2, y2, track_id = map(int, track)
+
+            unique_ids.add(track_id)
+
             cv2.rectangle(frame, (x1, y1), (x2, y2),
                           (0, 255, 0), 2)
             cv2.putText(frame, f"ID {track_id}",
@@ -52,6 +58,9 @@ def main():
         current_time = time.time()
         fps = 1.0 / (current_time - prev_time)
         prev_time = current_time
+
+        fps_list.append(fps)
+
 
         cv2.putText(frame, f"FPS: {fps:.2f}",
                     (20, 40),
@@ -68,6 +77,13 @@ def main():
 
     cv2.destroyAllWindows()
     out.release()
+
+    avg_fps = sum(fps_list) / len(fps_list)
+
+    print("==== RESULTS ====")
+    print(f"Average FPS: {avg_fps:.2f}")
+    print(f"Total unique IDs: {len(unique_ids)}")
+
 
 if __name__ == "__main__":
     main()
