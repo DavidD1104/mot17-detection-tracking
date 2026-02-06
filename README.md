@@ -27,8 +27,8 @@ Below are qualitative visual results of running YOLOv8n and YOLOv8s on the MOT17
 </p>
 
 <p align="center">
-  <b>Left:</b> YOLOv8n + SORT &nbsp;&nbsp; | &nbsp;&nbsp;
-  <b>Right:</b> YOLOv8s + SORT
+  YOLOv8n + SORT &nbsp;&nbsp; | &nbsp;&nbsp;
+  YOLOv8s + SORT
 </p>
 
 ## Results
